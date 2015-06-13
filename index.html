@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>玩吧管理系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/comm.css">
+<link rel="stylesheet" type="text/css" href="css/article.css">
+</head>
+
+<body>
+<div class="sidebar" id="sidebar">
+	<div class="logo">
+    	<h1>玩吧管理系统</h1>
+       	<span>Admin Service</span>
+    </div>
+    
+    <ul class="menu">
+    	<li class="on"><a href="javascript:;"><i class="icon_content"></i>内容管理</a></li>
+        <li><a href="javascript:;"><i class="icon_content"></i>内容管理</a></li>
+        <li><a href="javascript:;"><i class="icon_content"></i>内容管理</a></li>
+        <li><a href="javascript:;"><i class="icon_content"></i>内容管理</a></li>
+    </ul>    
+    
+    <div class="user">
+    	<img src="http://www.wanba123.cn/resources/images/index/header/logo.png" class="userimg">
+    	<div class="username">mengdan</div>
+        <a href="javascript:;" class="quit">退出</a>
+    </div>
+</div><!--/sidebar-->
+
+<div class="main" id="main">
+	<div class="maintitle"><i class="icon_content"></i><h2>内容管理</h2></div>
+    
+	<div class="filter">
+    	<div class="filterline">
+        	<div class="filtergroup">
+            	<div class="filterkey">选择专区</div>
+                <div class="filtervalue">
+                	<select>
+                    	<option>全部</option>
+                        <option>2植物大战僵尸2</option>
+                        <option>52海岛奇兵</option>
+                        <option>77全民突击</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filtergroup">
+            	<div class="filterkey">板块</div>
+                <div class="filtervalue">
+                	<select>
+                    	<option>全部</option>
+                        <option>文章</option>
+                        <option>视频</option>
+                        <option>问答</option>
+                        <option>晒图</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filtergroup">
+            	<div class="filterkey">状态</div>
+                <div class="filtervalue">
+                	<select>
+                    	<option>全部</option>
+                        <option>已删除</option>
+                        <option>禁言</option>
+                        <option>已推荐</option>
+                        <option>未推荐</option>
+                        <option>已加精</option>
+                        <option>未加精</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterline">
+        	<div class="filtergroup">
+            	<div class="filterkey">标题关键字</div>
+                <div class="filtervalue">
+                	<input type="text">
+                </div>
+            </div>
+            <div class="filtergroup">
+            	<div class="filterkey">用户ID</div>
+                <div class="filtervalue">
+                	<input type="text">
+                </div>
+            </div>
+            <div class="filtergroup">
+            	<div class="filterkey">文章ID</div>
+                <div class="filtervalue">
+                	<input type="text">
+                </div>
+            </div>
+            <div class="filtergroup">
+            	<div class="filterkey">开始时间</div>
+                <div class="filtervalue">
+                	<input type="text">&nbsp;-&nbsp;<input type="text">
+                </div>
+            </div>
+            <div class="filtergroup">
+            	<a href="javascript:;" class="btn_gray">搜索内容</a>
+            </div>
+        </div>
+    </div><!--/filter-->
+    
+    <div class="tool clearfix">
+    	<div class="fl">
+        	<a href="javascript:;" class="btn_gray">加精</a>
+            <a href="javascript:;" class="btn_gray">删除</a>
+            <a href="javascript:;" class="btn_gray">禁言</a>
+        </div>
+        <div class="fr"><a href="javascript:;" class="btn_gray">完成</a></div>
+    </div><!--/tool-->
+    
+    <div>
+    	<table class="tab_article">
+        	<thead>
+            	<tr>
+                	<th class="cho">选择</th>
+                    <th class="con">内容</th>
+                    <th class="ope">操作</th>
+                </tr>
+            </thead>
+        	<tbody>
+            	<tr>
+                	<td class="cho"><input type="checkbox"></td>
+                    <td class="con">
+                    	<div class="cont">
+                            <div class="con_1">
+                                <div class="tit">
+                                    <span>战舰少女攻略-《战舰少女》金刚级战舰预测分析</span>
+                                    <i class="icon_jing">精<label>+100玩吧蛋</label></i>
+                                    <i class="icon_shan">删</i>
+                                </div>
+                                <div class="text">不知道大家是否还记得，很久以前的战舰少女内测版本中，曾不知道大家a是否还记得，很久以前的战舰少女内测版</div>
+                                <div class="info">
+                                    文章ID:222222&nbsp;&nbsp;&nbsp;&nbsp;2015/06/10 18:17
+                                </div>
+                            </div>
+                            <div class="con_2"><img src="http://www.wanba123.cn/resources/images/index/header/logo.png"></div>
+                            <div class="con_3">
+                            	<div class="nam">西瓜呆斯</div>
+                                <div class="nid">用户ID:12345</div>
+                                <div><i class="icon_jinyan">被禁言</i></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="ope">
+                    	<div class="xl">
+                        	<div>删除：</div>
+                            <select>
+                                <option>未选择</option>
+                                <option>内容违规</option>
+                                <option>辱骂用户</option>
+                                <option>恶意操作</option>
+                            </select>
+                        </div>
+                        <div class="xl">
+                        	<div>禁言：</div>
+                            <select>
+                                <option>未选择</option>
+                                <option>禁言1天</option>
+                                <option>禁言3天</option>
+                                <option>禁言一周</option>
+                                <option>禁言30天</option>
+                                <option>永久禁言</option>
+                            </select>
+                        </div>
+                        <div class="xl">
+                        	<div>加精：</div>
+                            <select>
+                                <option>未选择</option>
+                                <option>50</option>
+                                <option>88</option>
+                                <option>188</option>
+                                <option>288</option>
+                                <option>388</option>
+                                <option>488</option>
+                                <option>588</option>
+                                <option>688</option>
+                                <option>788</option>
+                                <option>888</option>
+                            </select>
+                        </div>
+                        <div class="xl">
+                        	<div>推荐：</div>
+                            <select>
+                                <option>未选择</option>
+                                <option>推荐</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="tool toolbottom clearfix">
+    	<div class="fl">
+        	<a href="javascript:;" class="btn_gray">加精</a>
+            <a href="javascript:;" class="btn_gray">删除</a>
+            <a href="javascript:;" class="btn_gray">禁言</a>
+        </div>
+        <div class="fr"><a href="javascript:;" class="btn_gray">完成</a></div>
+    </div><!--/tool-->
+    
+    <div class="page">
+    	<a href="javascript:;" class="btn_gray btn_gray_selected">&lt;&nbsp;prev</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:;" class="btn_gray">next&nbsp;&gt;</a>
+    </div>
+</div><!--/main-->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
