@@ -9,7 +9,6 @@ $(function(){
 		mainH = $main.outerHeight(true),
 		docW = $(document).width(),
 		winH = $(window).height();
-		console.log(winW);
 		
 		if(docW <= 640){
 			$sidebar.height("auto");
