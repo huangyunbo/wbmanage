@@ -16,7 +16,7 @@
        	<span>Admin Service</span>
     </div>
     
-    <ul class="menu">
+    <ul class="menu" id="sidebar_menu">
     	<li class="on"><a href="javascript:;"><i class="icon_content"></i>内容管理</a></li>
         <li><a href="javascript:;"><i class="icon_content"></i>内容管理</a></li>
         <li><a href="javascript:;"><i class="icon_content"></i>内容管理</a></li>
@@ -28,17 +28,19 @@
     	<div class="username">mengdan</div>
         <a href="javascript:;" class="quit">退出</a>
     </div>
+    
+    <a class="icon_toggler_menu" id="toggler_menu"></a>
 </div><!--/sidebar-->
 
 <div class="main" id="main">
 	<div class="maintitle"><i class="icon_content"></i><h2>内容管理</h2></div>
     
-	<div class="filter">
-    	<div class="filterline">
+	<div class="filter clearfix">
+    	<div class="filterline clearfix">
         	<div class="filtergroup">
-            	<div class="filterkey">选择专区</div>
+            	<div class="filterkey w70">选择专区</div>
                 <div class="filtervalue">
-                	<select>
+                	<select class="w102">
                     	<option>全部</option>
                         <option>2植物大战僵尸2</option>
                         <option>52海岛奇兵</option>
@@ -47,9 +49,9 @@
                 </div>
             </div>
             <div class="filtergroup">
-            	<div class="filterkey">板块</div>
+            	<div class="filterkey w70">板块</div>
                 <div class="filtervalue">
-                	<select>
+                	<select class="w102">
                     	<option>全部</option>
                         <option>文章</option>
                         <option>视频</option>
@@ -59,9 +61,9 @@
                 </div>
             </div>
             <div class="filtergroup">
-            	<div class="filterkey">状态</div>
+            	<div class="filterkey w70">状态</div>
                 <div class="filtervalue">
-                	<select>
+                	<select class="w102">
                     	<option>全部</option>
                         <option>已删除</option>
                         <option>禁言</option>
@@ -74,32 +76,32 @@
             </div>
         </div>
         
-        <div class="filterline">
+        <div class="filterline clearfix">
         	<div class="filtergroup">
-            	<div class="filterkey">标题关键字</div>
+            	<div class="filterkey w70">标题关键字</div>
                 <div class="filtervalue">
-                	<input type="text">
+                	<input type="text" class="ipt">
                 </div>
             </div>
             <div class="filtergroup">
-            	<div class="filterkey">用户ID</div>
+            	<div class="filterkey w70">用户ID</div>
                 <div class="filtervalue">
-                	<input type="text">
+                	<input type="text" class="ipt">
                 </div>
             </div>
             <div class="filtergroup">
-            	<div class="filterkey">文章ID</div>
+            	<div class="filterkey w70">文章ID</div>
                 <div class="filtervalue">
-                	<input type="text">
+                	<input type="text" class="ipt">
                 </div>
             </div>
-            <div class="filtergroup">
-            	<div class="filterkey">开始时间</div>
+            <div class="filtergroup mr_10">
+            	<div class="filterkey w70">开始时间</div>
                 <div class="filtervalue">
-                	<input type="text">&nbsp;-&nbsp;<input type="text">
+                	<input type="text" class="ipt">&nbsp;-&nbsp;<input type="text" class="ipt">
                 </div>
             </div>
-            <div class="filtergroup">
+            <div class="filtergroup mt_3">
             	<a href="javascript:;" class="btn_gray">搜索内容</a>
             </div>
         </div>

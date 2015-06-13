@@ -6,11 +6,17 @@ $(function(){
 		var $sidebar = $("#sidebar"),
 		$main = $("#main"),
 		sidebarH = $sidebar.height(),
-		mainH = $main.height(),
-		bodyH = $(window).height();
+		mainH = $main.outerHeight(true),
+		docW = $(document).width(),
+		winH = $(window).height();
+		console.log(winW);
 		
-		if(mainH < bodyH){
-			$sidebar.height(bodyH);
+		if(docW <= 640){
+			$sidebar.height("auto");
+			return;
+		}
+		if(mainH < winH){
+			$sidebar.height(winH);
 		}else{
 			$sidebar.height(mainH);
 		}
@@ -20,5 +26,9 @@ $(function(){
 	
 	$(window).resize(function(){
 		calcSidebar();
+	});
+	
+	$("#toggler_menu").click(function(){
+		$("#sidebar_menu").toggle("slow");
 	});
 });
