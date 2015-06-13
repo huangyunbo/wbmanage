@@ -9,12 +9,13 @@
 .tab_article{ width:100%}
 .tab_article thead tr{ background:#f9f9f9}
 .tab_article thead th{ border:solid #e3e3e3; border-width:1px 0; font-weight:normal; color:#888; font-size:1.2em; padding:4px 0 5px}
-.tab_article thead .con{ text-align:left}
+.tab_article thead .cho{ white-space:nowrap}
+.tab_article thead .con{ text-align:left; padding-right:2px}
 .tab_article thead .ope{ text-align:left}
 .tab_article tbody td{ border-bottom:1px solid #e3e3e3}
 .tab_article .cho{ width:40px; text-align:center}
 .tab_article tbody .cho{ vertical-align:top; padding:10px 0 8px; *padding-top:7px}
-.tab_article tbody .con{ vertical-align:top; padding:8px 0}
+.tab_article tbody .con{ vertical-align:top; padding:8px 2px 8px 0}
 .tab_article tbody .ope{ vertical-align:top; padding:8px 0; width:35%}
 .tab_article .cont{ width:100%; display:table; font-size:1.3em}
 .tab_article .con_1{ width:60%; display:table-cell; vertical-align:top; *float:left}
@@ -26,8 +27,13 @@
 .tab_article .con_3{ width:20%; display:table-cell; vertical-align:top; *float:left}
 .tab_article .con_3 .nam{ color:#454545}
 .tab_article .con_3 .nid{ color:#8f8f8f}
-.tab_article .ope .xl{ float:left; margin:0 10px 10px 0; display:inline; color:#454545; font-size:1.3em}
-
+.tab_article .ope .xl{ float:left; margin:0 20px 10px 0; display:inline; color:#454545; font-size:1.3em}
+@media screen and (max-width:640px){
+	.tab_article .con_1{ width:inherit; display:table-row}
+	.tab_article .con_2{ width:inherit; display:table-row}
+	.tab_article .con_3{ width:inherit; display:table-row}
+	.tab_article .ope .xl{ float:none; display:block; margin-right:0}
+}
 
 
 
