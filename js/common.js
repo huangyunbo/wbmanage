@@ -24,10 +24,10 @@ $(function(){
 		$main = $("#main"),
 		sidebarH = $sidebar.height(),
 		mainH = $main.outerHeight(true),
-		docW = $(document).width(),
+		winW = $(window).width(),
 		winH = $(window).height();
 		
-		if(docW <= 640 && browser.version != 6 && browser.version != 7 && browser.version != 8){
+		if(winW <= 640 && browser.version != 6 && browser.version != 7 && browser.version != 8){
 			$sidebar.height("auto");
 			return;
 		}
