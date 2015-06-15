@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" type="text/css" href="css/comm.css">
+<link rel="stylesheet" type="text/css" href="css/permission.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
 </div><!--/sidebar-->
 
 <div class="main" id="main">
-	<div class="maintitle"><i class="icon_content"></i><h2>权限管理</h2></div>
+	<div class="maintitle"><i class="icon_content"></i><h2>操作日志</h2></div>
     
 	<div class="clearfix mb_10">
     	<div class="filtergroup mr_10">
@@ -46,12 +47,20 @@
                 </select>
             </div>
         </div>
+        <div class="filtergroup">
+            <div class="filterkey w70">用户ID</div>
+            <div class="filtervalue">
+                <input type="text" class="ipt">
+            </div>
+        </div>
+        <div class="filtergroup mr_10">
+            <div class="filterkey w70">开始时间</div>
+            <div class="filtervalue">
+                <input type="text" class="ipt">&nbsp;-&nbsp;<input type="text" class="ipt">
+            </div>
+        </div>
         <div class="filtergroup mt_3">
             <a href="javascript:;" class="btn_gray">查找</a>
-        </div>
-        
-        <div class="filtergroup fr mt_3">
-        	<a href="javascript:;" class="btn_gray">增加用户</a>
         </div>
     </div>
     
@@ -60,30 +69,27 @@
     	<table class="table table_layout_1">
         	<thead class="table_thead">
             	<tr>
-                	<th>用户ID</th>
-                    <th>用户名</th>
-                    <th>管理组</th>
-                    <th>本月操作数</th>
-                    <th>名人堂展示</th>
-                    <th>大神认证</th>
-                    <th>玩吧认证</th>
-                    <th>大神指数信息</th>
-                    <th>大神擅长游戏</th>
-                    <th class="align_center">操作</th>
+                	<th>操作人(ID)</th>
+                    <th>操作详情</th>
+                    <th>操作理由</th>
+                    <th>操作时间</th>
+                    <th>内容</th>
                 </tr>
             </thead>
         	<tbody>
             	<tr class="tr">
-                	<td class="td" data-th="用户ID">1234567</td>
-                    <td class="td" data-th="用户名">张三</td>
-                    <td class="td" data-th="管理组">LV2</td>
-                    <td class="td" data-th="本月操作数">200</td>
-                    <td class="td" data-th="名人堂展示">全球首个平民镀金大神</td>
-                    <td class="td" data-th="大神认证">全球首个0元党镀金大神</td>
-                    <td class="td" data-th="玩吧认证">首个平民镀金大神</td>
-                    <td class="td" data-th="大神指数信息">人气指数#7800##|荣誉指数#8800##|技巧指数#8200##</td>
-                    <td class="td" data-th="大神擅长游戏">52</td>
-                    <td class="td align_center" data-th="操作"><a href="javascript:;" class="nowrap mr_10">编辑</a><a href="javascript:;" class="nowrap">删除</a></td>
+                	<td class="td" data-th="操作人(ID)">屌丝(1234567)</td>
+                    <td class="td" data-th="操作详情">新增管理员</td>
+                    <td class="td" data-th="操作理由"></td>
+                    <td class="td" data-th="操作时间">2015/06/09 16:02</td>
+                    <td class="td" data-th="内容">胡一(22222)</td>
+                </tr>
+                <tr class="tr">
+                	<td class="td" data-th="操作人(ID)">屌丝(1234567)</td>
+                    <td class="td" data-th="操作详情">删除文章</td>
+                    <td class="td" data-th="操作理由">发黄图</td>
+                    <td class="td" data-th="操作时间">2015/06/09 16:02</td>
+                    <td class="td" data-th="内容">海岛奇兵夏日大作战！</td>
                 </tr>
             </tbody>
         </table>
