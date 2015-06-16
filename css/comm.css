@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* 2015/6/11 Diaosi */
 
 body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,code,form,img,dl,dd,dt,input,textarea,button,th,td,iframe{margin:0;padding:0}
@@ -97,6 +97,7 @@ a:hover{ text-decoration:underline}
 .align_left{ text-align:left !important}
 .col_888{ color:#888}
 .nowrap{ white-space:nowrap}
+.hide{display:none !important}
 
 
 
