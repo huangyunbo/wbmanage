@@ -19,7 +19,7 @@ $(function(){
 		};
 	})();
 	
-	function calcSidebar(){//用来控制登陆的布局始终在最左下角
+	function calcSidebar(){//用来用户名布局默认在最左下角，小于640在右上角
 		var $sidebar = $("#sidebar"),
 		$main = $("#main"),
 		sidebarH = $sidebar.height(),
@@ -47,4 +47,5 @@ $(function(){
 	$("#toggler_menu").click(function(){
 		$("#sidebar_menu").toggle("slow");
 	});
+	
 });

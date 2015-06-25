@@ -88,6 +88,11 @@ a:hover{ text-decoration:underline}
 	.table_layout_1 tbody .td:before{ content:attr(data-th); color:#888; display:inline-block; width:30%}
 	.table_layout_1 tbody .align_center{ text-align:inherit !important}
 }
+/*操作成功失败提示*/
+.msgboxdiv{ position:fixed; width:100%; top:0; text-align:center; color:#fff; font:1.4em "Microsoft YaHei"}
+.msgboxdiv .msg,.msgboxdiv .errmsg{ background:#68af02; padding:3px 24px; border-radius:0 0 3px 3px; display:inline-block; text-align:left}
+.msgboxdiv .errmsg{ background:#ef8f00; position:relative}
+.msgboxdiv .errmsg .close{ position:absolute; top:6px; right:6px; font:12px \5b8b\4f53; cursor:pointer}
 /*通用*/
 .fl{ float:left}
 .fr{ float:right}
