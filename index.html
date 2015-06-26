@@ -113,7 +113,7 @@
             <a href="javascript:;" class="btn_gray">删除</a>
             <a href="javascript:;" class="btn_gray">禁言</a>
         </div>
-        <div class="fr"><a href="javascript:;" class="btn_gray">完成</a></div>
+        <div class="fr"><a href="javascript:;" class="btn_gray" id="t1">完成</a></div>
     </div><!--/tool-->
     
     <div>
@@ -205,7 +205,7 @@
             <a href="javascript:;" class="btn_gray">删除</a>
             <a href="javascript:;" class="btn_gray">禁言</a>
         </div>
-        <div class="fr"><a href="javascript:;" class="btn_gray">完成</a></div>
+        <div class="fr"><a href="javascript:;" class="btn_gray" id="t2">完成</a></div>
     </div><!--/tool-->
     
     <div class="page">
@@ -215,8 +215,21 @@
 </div><!--/main-->
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<div class="msgboxdiv">
-	<!--<span class="msg">操作成功</span>-->
+<script type="text/javascript">
+var tips = new Tips();
+
+$("#t1").click(function(){
+	tips.msg();
+});
+
+$("#t2").click(function(){
+	var _html = '<div>id:1234 删除失败</div><div>id:1235 加精失败</div>';
+	tips.errmsg(_html);
+});
+
+</script>
+<!--<div class="msgboxdiv">
+	<span class="msg">操作成功</span>
     <span class="errmsg">
     	<i class="close">[关闭]</i>
     	操作失败：
@@ -224,6 +237,6 @@
         <div>id:24673 加精失败</div>
         <div>id:24674 推荐失败</div>
     </span>
-</div>
+</div>-->
 </body>
 </html>
