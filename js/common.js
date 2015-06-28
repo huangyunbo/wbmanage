@@ -73,7 +73,7 @@ Tips.prototype = {
 		clearTimeout(this.timer);
 		this.timer = setTimeout(function(){
 			that.hidemsgbox();
-		}, 5000);
+		}, 1000);
 	},
 	printhtml: function(){
 		var option = arguments[0];
@@ -93,29 +93,40 @@ Tips.prototype = {
 			this.timedCount();
 			
 		}else if(this.option.type == 2){
-			var errmsg = document.createElement('span');
+			var fragment = document.createDocumentFragment(),//创建碎片文档,提高append效率
+			errmsg = document.createElement('span'),
+			btn_close_errmsg = document.createElement('i'),
+			tempdiv;
+			
 			errmsg.className = 'errmsg';
-			errmsg.innerHTML = '<div>操作失败</div>';
-			var btn_close_errmsg = document.createElement('i');
+			errmsg.innerHTML = '<div class="errmsg_title">操作失败</div>';
 			btn_close_errmsg.className = 'close';
 			btn_close_errmsg.id = 'btn_close_errmsg';
 			btn_close_errmsg.innerHTML = '[关闭]';
-			errmsg.appendChild(btn_close_errmsg);
-			if(typeof this.option.html == "string"){
-				var tempdiv = document.createElement('tempdiv');
-				tempdiv.innerHTML = this.option.html;
-				
-				console.log(errmsg);
-				errmsg.appendChild(tempdiv.childNodes.item(0));
-				errmsg.appendChild(tempdiv.childNodes.item(1));
-				console.log(errmsg);
-				//for(var i=0; i<tempdiv.childNodes.length; i++){
-					//console.log(i);
-					//errmsg.appendChild(tempdiv.childNodes[i]);
-				//}
-				
-			}
 			
+			fragment.appendChild(btn_close_errmsg);
+			
+			if(typeof this.option.html == "string"){
+				tempdiv = document.createElement('tempdiv');
+				tempdiv.innerHTML = this.option.html,
+				tempdiv = tempdiv.childNodes;
+				
+				function mergeArr( first, second ) {
+					var len =+ second.length,
+						j = 0,
+						i = first.length;
+					for (; j<len; j++){
+						first[i++] = second[j];
+					}
+					first.length = i;
+					return first;
+				}
+				tempdiv = mergeArr([],tempdiv);//转为普通数组，因为NodeList会动态减少
+				for(var i=0; i<tempdiv.length; i++){
+					fragment.appendChild(tempdiv[i]);
+				}
+			}
+			errmsg.appendChild(fragment);
 			msgboxdiv.appendChild(errmsg);
 		}
 		
