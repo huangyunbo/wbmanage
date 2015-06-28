@@ -109,9 +109,9 @@
     
     <div class="tool clearfix">
     	<div class="fl">
-        	<a href="javascript:;" class="btn_gray">加精</a>
-            <a href="javascript:;" class="btn_gray">删除</a>
-            <a href="javascript:;" class="btn_gray">禁言</a>
+        	<a href="javascript:;" class="btn_gray btn_dialog_addessence">加精</a>
+            <a href="javascript:;" class="btn_gray btn_dialog_delete">删除</a>
+            <a href="javascript:;" class="btn_gray btn_dialog_gag">禁言</a>
         </div>
         <div class="fr"><a href="javascript:;" class="btn_gray" id="t1">完成</a></div>
     </div><!--/tool-->
@@ -201,9 +201,9 @@
     
     <div class="tool toolbottom clearfix">
     	<div class="fl">
-        	<a href="javascript:;" class="btn_gray">加精</a>
-            <a href="javascript:;" class="btn_gray">删除</a>
-            <a href="javascript:;" class="btn_gray">禁言</a>
+        	<a href="javascript:;" class="btn_gray btn_dialog_addessence">加精</a>
+            <a href="javascript:;" class="btn_gray btn_dialog_delete">删除</a>
+            <a href="javascript:;" class="btn_gray btn_dialog_gag">禁言</a>
         </div>
         <div class="fr"><a href="javascript:;" class="btn_gray" id="t2">完成</a></div>
     </div><!--/tool-->
@@ -213,30 +213,104 @@
         <a href="javascript:;" class="btn_gray">next&nbsp;&gt;</a>
     </div>
 </div><!--/main-->
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript">
-var tips = new Tips();
 
-$("#t1").click(function(){
-	tips.msg();
-});
-
-$("#t2").click(function(){
-	var _html = '2<div>id:1234 删除失败</div><div>id:1235 加精失败</div>';
-	tips.errmsg(_html);
-});
-
-</script>
 <!--<div class="msgboxdiv">
 	<span class="msg">操作成功</span>
     <span class="errmsg">
+    	<div class="errmsg_title">操作失败：</div>
     	<i class="close">[关闭]</i>
-    	操作失败：
     	<div>id:24672 删除/禁言删除/禁言删除/禁言删除/删除/禁言删除/禁言删除/禁言禁言 失败</div>
         <div>id:24673 加精失败</div>
         <div>id:24674 推荐失败</div>
     </span>
 </div>-->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/easydialog.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+var tips = new Tips();
+$("#t1").click(function(){
+	tips.msg();
+});
+$("#t2").click(function(){
+	var _html = '2<div>id:1234 删除失败</div><div>id:1235 加精失败</div>';
+	tips.errmsg(_html);
+});
+
+function btnFn(){
+	console.log("确定");
+}
+
+var dialog_essence_html = '发蛋数量：<select>'+
+							'<option>50</option>'+
+							'<option>88</option>'+
+							'<option>188</option>'+
+							'<option>288</option>'+
+							'<option>388</option>'+
+							'<option>488</option>'+
+							'<option>588</option>'+
+							'<option>688</option>'+
+							'<option>788</option>'+
+							'<option>888</option>'+
+						'</select>';
+						
+var dialog_delete_html = '<div class="field mb_10">删除理由：</div>'+
+							'<div class="field"><label><input class="radio" type="radio" name="form_radio_delete">内容违规</label></div>'+
+							'<div class="field"><label><input class="radio" type="radio" name="form_radio_delete">辱骂用户</label></div>'+
+							'<div class="field"><label><input class="radio" type="radio" name="form_radio_delete">恶意操作</label></div>'+
+							'<div class="field"><label><input class="radio" type="radio" name="form_radio_delete">其他理由</label>&nbsp;<input class="ipt w200"></div>';
+							
+var dialog_gag_html = '<div class="field mb_10">禁言理由：</div>'+
+						'<div class="field">禁言时间&nbsp;'+
+							'<select>'+
+								'<option>禁言1天</option>'+
+								'<option>禁言3天</option>'+
+								'<option>禁言一周</option>'+
+								'<option>禁言30天</option>'+
+								'<option>永久禁言</option>'+
+							'</select>'+
+						'</div>'+
+						'<div class="field"><label><input class="radio" type="radio" name="form_radio_delete">内容违规</label></div>'+
+					  	'<div class="field"><label><input class="radio" type="radio" name="form_radio_delete">辱骂用户</label></div>'+
+					  	'<div class="field"><label><input class="radio" type="radio" name="form_radio_delete">恶意操作</label></div>'+
+					  	'<div class="field"><label><input class="radio" type="radio" name="form_radio_delete">其他理由</label>&nbsp;<input class="ipt w200"></div>';
+
+//加精发蛋弹窗
+$(".btn_dialog_addessence").click(function(){
+	easyDialog.open({
+		container : {
+			header : '内容加精',
+			content : dialog_essence_html,
+			yesFn : btnFn,
+			noFn : true
+		},
+		fixed : false
+	});
+});
+//删除弹窗
+$(".btn_dialog_delete").click(function(){
+	easyDialog.open({
+		container : {
+			header : '删除',
+			content : dialog_delete_html,
+			yesFn : btnFn,
+			noFn : true
+		},
+		fixed : false
+	});
+});
+//禁言弹窗
+$(".btn_dialog_gag").click(function(){
+	easyDialog.open({
+		container : {
+			header : '禁言',
+			content : dialog_gag_html,
+			yesFn : btnFn,
+			noFn : true
+		},
+		fixed : false
+	});
+});
+</script>
 </body>
 </html>
