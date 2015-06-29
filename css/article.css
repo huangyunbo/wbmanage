@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* 2015/6/12 */
 
 .icon_jing{ border:1px solid #ff0000; background:#ff0000; font-size:12px; color:#fff; padding-left:2px; border-radius:3px; white-space:nowrap}
@@ -13,7 +13,7 @@
 .tab_article thead .con{ text-align:left; padding-right:2px}
 .tab_article thead .ope{ text-align:left}
 .tab_article tbody td{ border-bottom:1px solid #e3e3e3}
-.tab_article tbody td.no{ border:none; font-size:1.2em}
+.tab_article tbody td.no{ border:none; font-size:1.2em; padding:3px}
 .tab_article .cho{ width:40px; text-align:center}
 .tab_article tbody .cho{ vertical-align:top; padding:10px 0 8px; *padding-top:7px}
 .tab_article tbody .con{ vertical-align:top; padding:8px 2px 8px 0}
