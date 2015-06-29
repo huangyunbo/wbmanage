@@ -57,15 +57,15 @@ var Tips = function(){
 };
 Tips.prototype = {
 	constructor: Tips,
-	ismsgbox: function(){
+	hidemsgbox: function(){
 		if($("#msgboxdiv").length == 1){
 			if(this.option.type != 1){
 				clearTimeout(this.timer);
 			}
-			this.hidemsgbox();
+			this.removemsgbox();
 		}
 	},
-	hidemsgbox: function(){
+	removemsgbox: function(){
 		$("#msgboxdiv").remove();
 	},
 	timedCount: function(){
@@ -128,10 +128,19 @@ Tips.prototype = {
 			}
 			errmsg.appendChild(fragment);
 			msgboxdiv.appendChild(errmsg);
+		}else if(this.option.type == 3){
+			var loadermsg = document.createElement('span');
+			loadermsg.className = 'loadermsg';
+			loadermsg.innerHTML = '正在加载<img src="/images/loader.gif">';
+			msgboxdiv.appendChild(loadermsg);
 		}
 		
-		this.ismsgbox(); 
+		this.hidemsgbox(); 
 		$("body").append(msgboxdiv);
+	},
+	loader: function(){
+		this.option.type = 3;
+		this.printhtml();
 	},
 	errmsg: function(){
 		this.option.type = 2;
