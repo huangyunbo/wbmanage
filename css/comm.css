@@ -16,6 +16,25 @@ em,i,code,cite,address,th{font-style:normal}
 a{text-decoration:none;outline:none; color:#069}
 a:hover{ text-decoration:underline}
 
+.login_body{ background:#f6f6f6}
+.logo_login{ width:221px; height:140px; background:url(../images/wb_login.png) no-repeat; margin:140px auto 50px}
+.login_box{ width:340px; margin:0 auto; background:#fff; border-top:1px solid #fbbc0e; border-radius:4px; padding:40px}
+.login_box .field{ padding:10px 0 12px 25px; *padding-left:50px; border-bottom:1px solid #d3d3d3; position:relative; margin-top:20px}
+.login_box .field .login_text{ width:100%; padding-left:25px; *padding-left:0; box-sizing:border-box; font:1.6em "Microsoft YaHei"; color:#454545; border:0; outline:none}
+.icon_login_user,.icon_login_pwd,.ico_xlwb,.ico_txqq{ background:url(../images/wb_login.png) no-repeat 0 -140px; width:24px; height:24px}
+.icon_login_user,.icon_login_pwd{ position:absolute; left:0; _left:-50px; top:7px}
+.icon_login_pwd{ background-position:-23px -140px}
+.login_box .field_tips{ height:50px; line-height:50px; padding-left:49px; color:#ff0000; font-size:1.2em}
+.login_box .btn{ width:100%; height:42px; line-height:42px; background:#fbbc0e; border:none; font:1.8em "Microsoft YaHei"; color:#fff; border-radius:5px; cursor:pointer; outline:none; -webkit-appearance:none;}
+.login_box .btn:hover{ background:#eaae09}
+.login_box .third p{ font-size:1.2em; color:#bebebe; text-align:center; padding:25px 0 10px}
+.login_box .item{ width:50%; float:left; text-align:center; color:#000; font:1.2em "Microsoft YaHei"}
+.ico_xlwb,.ico_txqq{ background-position:-48px -140px; display:inline-block; margin-right:5px; vertical-align:-6px; *vertical-align:-2px}
+.ico_txqq{ background-position:-72px -140px}
+@media screen and (max-width:640px){
+	.logo_login{ width:111px; height:70px; margin:20px auto 10px; background-size:111px}
+	.login_box{ width:220px; padding:30px}
+}
 .sidebar{ background:#f6f6f6; position:absolute; width:180px; height:100%; left:0; top:0}
 .sidebar .logo{ color:#888; padding:20px 0 50px 10px}
 .sidebar .logo h1{ font:2em "Microsoft YaHei"}
@@ -112,8 +131,8 @@ a:hover{ text-decoration:underline}
 .easyDialog_wrapper .btn_highlight{ background:#4787ed; border-color:#3079ed; color:#fff}
 .easyDialog_wrapper .btn_normal{ margin-left:10px; border-color:#c3c3c3; background:#ececec; color:#333}
 
-.field{ margin-bottom:5px}
-.field .radio{ vertical-align:-2px; margin-right:2px}
+.easyDialog_wrapper .field{ margin-bottom:5px}
+.easyDialog_wrapper .field .radio{ vertical-align:-2px; margin-right:2px}
 /*通用*/
 .fl{ float:left}
 .fr{ float:right}
