@@ -13,6 +13,7 @@
 .tab_article thead .con{ text-align:left; padding-right:2px}
 .tab_article thead .ope{ text-align:left}
 .tab_article tbody td{ border-bottom:1px solid #e3e3e3}
+.tab_article tbody td.no{ border:none; font-size:1.2em}
 .tab_article .cho{ width:40px; text-align:center}
 .tab_article tbody .cho{ vertical-align:top; padding:10px 0 8px; *padding-top:7px}
 .tab_article tbody .con{ vertical-align:top; padding:8px 2px 8px 0}
