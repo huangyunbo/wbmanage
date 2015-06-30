@@ -94,6 +94,7 @@ a:hover{ text-decoration:underline}
 .table_thead{ background:#f9f9f9; border:solid #e3e3e3; border-width:1px 0}
 .table_thead th{ *border:solid #e3e3e3; *border-width:1px 0; font-weight:normal; color:#888; font-size:13px; padding:4px 0 5px; white-space:nowrap}
 .table .tr{ border-bottom:1px solid #e3e3e3}
+.table .tr:hover{ background:#f9f9f9}
 .table .td{ *border-bottom:1px solid #e3e3e3; padding:5px 0}
 .table_layout_1 .table_thead th{ text-align:left; padding-left:10px; vertical-align:top}
 .table_layout_1 .td{ padding-left:10px; vertical-align:top}
