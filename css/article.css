@@ -21,8 +21,8 @@
 .tab_article tbody .ope{ vertical-align:top; padding:8px 0; width:35%}
 .tab_article .cont{ width:100%; display:table; font-size:1.3em}
 .tab_article .con_1{ width:60%; display:table-cell; vertical-align:top; *float:left}
-.tab_article .con_1 .tit{ color:#454545}
-.tab_article .con_1 .text{ color:#8f8f8f}
+.tab_article .con_1 .tit{ color:#454545; word-break:break-all}
+.tab_article .con_1 .text{ color:#8f8f8f; word-break:break-all}
 .tab_article .con_1 .info{ color:#8f8f8f}
 .tab_article .con_2{ width:20%; display:table-cell; vertical-align:top; *float:left}
 .tab_article .con_2 img{ width:90px}
