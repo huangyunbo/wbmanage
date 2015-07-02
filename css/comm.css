@@ -75,7 +75,7 @@ a:hover{ text-decoration:underline}
 	.sidebar .menu{ display:block !important}
 }
 /*按钮*/
-.btn_gray{ background:#fff; border:1px solid #c7c7c7; border-radius:4px; padding:5px 12px; line-height:1; color:#888; font-size:13px; display:inline-block; margin-right:5px}
+.btn_gray{ background:#fff; border:1px solid #c7c7c7; border-radius:4px; padding:5px 12px; line-height:1; color:#888; font-size:13px; display:inline-block; margin-right:5px; cursor:pointer}
 .btn_gray_selected{ background:#f5f5f5; color:#c7c7c7}
 .btn_gray:hover{ background:#f5f5f5; text-decoration:none}
 /*表格上下方多项操作条*/
