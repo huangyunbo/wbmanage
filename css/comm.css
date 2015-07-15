@@ -85,8 +85,8 @@ a:hover{ text-decoration:underline}
 .page{ text-align:center; padding:10px 0}
 /*筛选*/
 .filtergroup{ float:left; font-size:13px; _font-size:12px; margin:5px 0; display:inline; color:#232323}
-.filterkey{ display:inline-block; text-align:right; *float:left}
-.filtervalue{ display:inline-block; *float:left}
+.filterkey{ display:inline-block; text-align:right; *float:left; vertical-align:top}
+.filtervalue{ display:inline-block; *float:left; vertical-align:top}
 /*表单*/
 .ipt{ width:100px; height:20px; line-height:20px; font-size:13px; border-radius:2px; border:1px solid #c7c7c7}
 /*表格*/
@@ -141,7 +141,9 @@ a:hover{ text-decoration:underline}
 .w80{ width:80px}
 .w100{ width:100px}
 .w102{ width:102px}
-.w200{width:200px}
+.w200{ width:200px}
+.w300{ width:300px}/*textarea*/
+.h100{ height:100px}/*textarea*/
 .mt_3{ margin-top:3px}
 .mr_10{ margin-right:10px}
 .mb_10{ margin-bottom:10px}

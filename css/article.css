@@ -11,6 +11,7 @@
 .tab_article thead tr{ background:#f9f9f9}
 .tab_article thead th{ border:solid #e3e3e3; border-width:1px 0; font-weight:normal; color:#888; font-size:1.2em; padding:4px 0 5px}
 .tab_article thead .cho{ white-space:nowrap}
+.tab_article thead .cho .checkbox{ vertical-align:middle; vertical-align:-2px\0}
 .tab_article thead .con{ text-align:left; padding-right:2px}
 .tab_article thead .ope{ text-align:left}
 .tab_article tbody td{ border-bottom:1px solid #e3e3e3}
